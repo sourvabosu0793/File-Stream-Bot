@@ -8,21 +8,21 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '21100083'))
-    API_HASH = str(getenv('API_HASH', '8980ecdc34880454c2e31eec10033f5b'))
+    API_ID = int(getenv('API_ID', '20679071'))
+    API_HASH = str(getenv('API_HASH', '3d088893c7ff5b84c429eadf6df88ab4'))
     PICS = (environ.get('PICS','https://telegra.ph/file/b8cb4ec31918719a05986.jpg')).split()
     BOT_TOKEN = str(getenv('BOT_TOKEN', ''))
-    name = str(getenv('name', 'rosestreamsbot'))
+    name = str(getenv('name', 'rosestreamsrobot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002191926518'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002177074238'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6402721511").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5408428203").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'robartlandcovis'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'orriotel'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
